@@ -37,3 +37,14 @@ npm install --save-dev mocha chai nyc chai-http
 ```
 npm test
 ```
+## Pruebas Implementadas
+
+- Cuando se inicia un juego nuevo le toca al primer jugador y el tablero esta vacio.
+- Cuando el primer jugador hace su movimiento le toca al otro jugador y la casilla elegida por el primer jugardor esta ocupada.
+- Cuando el segundo jugador hace su movimiento le toca de nuevo al primer jugador y las dos casillas elegidar por el primer y segundo jugador estan ocupadas con marcas diferentes
+- Cuando un jugador marca tres casillas de la misma fila entonces gana
+- Cuando un jugador marca tres casillas de la misma columna entonces gana
+- Cuando un jugador marca tres casillas de las diagonales entonces gana
+- Si un jugador mueve cuando no es su turno entonces se devuelve un error y el tablero no cambia.
+- Cuando no quedan casillas vacias y no hay un ganador entonces hay un empate.
+- Cuando un jugador hace un movimiento a una casilla que ya esta ocupada entonces devuelve un error y el tablero no cambia
